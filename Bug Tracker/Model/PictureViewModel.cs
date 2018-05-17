@@ -9,11 +9,12 @@ namespace Bug_Tracker.Model
     /// <summary>
     /// Model for saving image about bug
     /// </summary>
-    class Image
+    class PictureViewModel
     {
-        public int ImageId { get; set; }
+        public int? ImageId { get; set; }
+        public int BugId { get; set; }
         public string ImagePath { get; set; }
         public string ImageName { get; set; }
-        public int BugId { get; set; }
+        
     }
 }

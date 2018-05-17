@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace Bug_Tracker.Model
 {
     /// <summary>
-    /// Model to save about code fixer
+    /// model to save about bug information
     /// </summary>
-    class Fixer
+    class BugInformationViewModel
     {
-        public int FixerId { get; set; }
-        public int FixedBy { get; set; }
+        public int InformationId { get; set; }
         public int BugId { get; set; }
-        public DateTime FixedDate { get; set; }
+        public string Cause { get; set; }
+        public string Symptons { get; set; }
     }
 }

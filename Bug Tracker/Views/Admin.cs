@@ -34,7 +34,7 @@ namespace Bug_Tracker.Views
                 MessageBox.Show("Username and password cann't be null");
             } else
             {
-                AdminDAO adminDAO = new AdminDAO();
+                SystemAdminDAO adminDAO = new SystemAdminDAO();
                 int id = adminDAO.IsLogin(username, password);
 
                 if (id>0)

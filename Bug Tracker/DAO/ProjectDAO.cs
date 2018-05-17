@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.DAO
 {
-    class ProjectDAO : GenericDAO<Project>
+    class ProjectDAO : GenericDAO<ProjectViewModel>
     {
         private SqlConnection conn = new DBConnection().GetConnection();
 
@@ -40,10 +40,10 @@ namespace Bug_Tracker.DAO
             }
         }
 
-        public List<Project> GetAll()
+        public List<ProjectViewModel> GetAll()
         {
             conn.Open();
-            List<Project> list = new List<Project>();
+            List<ProjectViewModel> list = new List<ProjectViewModel>();
 
             try
             {
@@ -57,7 +57,7 @@ namespace Bug_Tracker.DAO
                     while (reader.Read())
                     {
 
-                        Project p = new Project
+                        ProjectViewModel p = new ProjectViewModel
                         {
                             ProjectId = Convert.ToInt32(reader["project_id"]),
                             ProjectName = reader["project_name"].ToString(),
@@ -77,12 +77,12 @@ namespace Bug_Tracker.DAO
             return list;
         }
 
-        public Project GetById(int id)
+        public ProjectViewModel GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(Project t)
+        public void Insert(ProjectViewModel t)
         {
             conn.Open();
             SqlTransaction trans = conn.BeginTransaction();
@@ -111,7 +111,7 @@ namespace Bug_Tracker.DAO
             }
         }
 
-        public void Update(Project t)
+        public void Update(ProjectViewModel t)
         {
             conn.Open();
             SqlTransaction trans = conn.BeginTransaction();

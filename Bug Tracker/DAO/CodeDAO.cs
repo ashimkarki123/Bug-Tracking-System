@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.DAO
 {
-    class CodeDAO : GenericDAO<Code>
+    class CodeDAO : GenericDAO<CodeViewModel>
     {
 
         private SqlConnection conn = new DBConnection().GetConnection();
@@ -18,17 +18,17 @@ namespace Bug_Tracker.DAO
             throw new NotImplementedException();
         }
 
-        public List<Code> GetAll()
+        public List<CodeViewModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Code GetById(int id)
+        public CodeViewModel GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(Code t)
+        public void Insert(CodeViewModel t)
         {
             conn.Open();
             SqlTransaction trans = conn.BeginTransaction();
@@ -59,7 +59,7 @@ namespace Bug_Tracker.DAO
             }
         }
 
-        public void Update(Code t)
+        public void Update(CodeViewModel t)
         {
             throw new NotImplementedException();
         }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.DAO
 {
-    class AdminDAO : GenericDAO<Admin>
+    class SystemAdminDAO : GenericDAO<SystemAdmin>
     {
         private SqlConnection conn = new DBConnection().GetConnection();
 
@@ -17,17 +17,17 @@ namespace Bug_Tracker.DAO
             throw new NotImplementedException();
         }
 
-        public List<Admin> GetAll()
+        public List<SystemAdmin> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Admin GetById(int id)
+        public SystemAdmin GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(Admin t)
+        public void Insert(SystemAdmin t)
         {
             conn.Open();
             SqlTransaction trans = conn.BeginTransaction();
@@ -57,7 +57,7 @@ namespace Bug_Tracker.DAO
             }
         }
 
-        public void Update(Admin t)
+        public void Update(SystemAdmin t)
         {
             throw new NotImplementedException();
         }

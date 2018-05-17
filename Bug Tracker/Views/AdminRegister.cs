@@ -25,7 +25,7 @@ namespace Bug_Tracker.Views
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            Bug_Tracker.Model.Admin admin = new Bug_Tracker.Model.Admin
+            Bug_Tracker.Model.SystemAdmin admin = new Bug_Tracker.Model.SystemAdmin
             {
                 CompanyName = companyName,
                 Username = username,
@@ -39,7 +39,7 @@ namespace Bug_Tracker.Views
             {
                 try
                 {
-                    AdminDAO adminDAO = new AdminDAO();
+                    SystemAdminDAO adminDAO = new SystemAdminDAO();
                     adminDAO.Insert(admin);
 
                     MessageBox.Show("Account created");

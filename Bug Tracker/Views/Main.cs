@@ -207,7 +207,7 @@ namespace Bug_Tracker.Views
         private void button1_Click(object sender, EventArgs e)
         {
             //bug
-            Bug bug = new Bug
+            BugViewModel bug = new BugViewModel
             {
                 ProjectName = textBox1.Text,
                 ClassName = textBox2.Text,
@@ -230,7 +230,7 @@ namespace Bug_Tracker.Views
 
 
             string appPath = Path.GetDirectoryName(Application.ExecutablePath) + @"\code_image\";
-            Bug_Tracker.Model.Image image = new Bug_Tracker.Model.Image
+            Bug_Tracker.Model.PictureViewModel image = new Bug_Tracker.Model.PictureViewModel
             {
                 ImagePath = "code_image",
                 ImageName = imageName,
@@ -255,7 +255,7 @@ namespace Bug_Tracker.Views
             string c = fastColoredTextBox1.Text;
             string codeFileName = DateTime.Now.Second.ToString();
 
-            Code code = new Code
+            CodeViewModel code = new CodeViewModel
             {
                 CodeFilePath = "code",
                 CodeFileName = codeFileName,

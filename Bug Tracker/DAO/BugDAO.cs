@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.DAO
 {
-    class BugDAO : GenericDAO<Bug>
+    class BugDAO : GenericDAO<BugViewModel>
     {
 
         private SqlConnection conn = new DBConnection().GetConnection();
@@ -19,17 +19,17 @@ namespace Bug_Tracker.DAO
             throw new NotImplementedException();
         }
 
-        public List<Bug> GetAll()
+        public List<BugViewModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Bug GetById(int id)
+        public BugViewModel GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(Bug t)
+        public void Insert(BugViewModel t)
         {
             conn.Open();
             SqlTransaction trans = conn.BeginTransaction();
@@ -66,7 +66,7 @@ namespace Bug_Tracker.DAO
 
         }
 
-        public void Update(Bug t)
+        public void Update(BugViewModel t)
         {
             throw new NotImplementedException();
         }

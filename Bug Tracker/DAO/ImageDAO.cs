@@ -8,7 +8,7 @@ using Bug_Tracker.Model;
 
 namespace Bug_Tracker.DAO
 {
-    class ImageDAO : GenericDAO<Image>
+    class ImageDAO : GenericDAO<PictureViewModel>
     {
 
         private SqlConnection conn = new DBConnection().GetConnection();
@@ -18,17 +18,17 @@ namespace Bug_Tracker.DAO
             throw new NotImplementedException();
         }
 
-        public List<Image> GetAll()
+        public List<PictureViewModel> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Image GetById(int id)
+        public PictureViewModel GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(Image t)
+        public void Insert(PictureViewModel t)
         {
             conn.Open();
             SqlTransaction trans = conn.BeginTransaction();
@@ -58,7 +58,7 @@ namespace Bug_Tracker.DAO
             }
         }
 
-        public void Update(Image t)
+        public void Update(PictureViewModel t)
         {
             throw new NotImplementedException();
         }

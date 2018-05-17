@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.DAO
 {
-    class TesterDAO : GenericDAO<Tester>
+    class TesterDAO : GenericDAO<TesterViewModel>
     {
         private SqlConnection conn = new DBConnection().GetConnection();
         /// <summary>
@@ -26,7 +26,7 @@ namespace Bug_Tracker.DAO
         /// </summary>
         /// <returns></returns>
 
-        public List<Tester> GetAll()
+        public List<TesterViewModel> GetAll()
         {
             throw new NotImplementedException();
         }
@@ -36,7 +36,7 @@ namespace Bug_Tracker.DAO
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Tester GetById(int id)
+        public TesterViewModel GetById(int id)
         {
             throw new NotImplementedException();
         }
@@ -45,7 +45,7 @@ namespace Bug_Tracker.DAO
         /// used to insert new tester
         /// </summary>
         /// <param name="t"></param>
-        public void Insert(Tester t)
+        public void Insert(TesterViewModel t)
         {
             conn.Open();
             SqlTransaction trans = conn.BeginTransaction();
@@ -79,7 +79,7 @@ namespace Bug_Tracker.DAO
         /// used to update tester information
         /// </summary>
         /// <param name="t"></param>
-        public void Update(Tester t)
+        public void Update(TesterViewModel t)
         {
             throw new NotImplementedException();
         }

@@ -49,7 +49,7 @@ namespace Bug_Tracker.Views
             {
                 if (radioButton1.Checked)
                 {
-                    Programmer p = new Programmer { ProgrammerId = 0, FullName = name, Username = username, Password = password };
+                    ProgrammerViewModel p = new ProgrammerViewModel { ProgrammerId = 0, FullName = name, Username = username, Password = password };
                     try
                     {
                         new ProgrammerDAO().Insert(p);
@@ -63,7 +63,7 @@ namespace Bug_Tracker.Views
                 }
                 else
                 {
-                    Tester p = new Tester { TesterId = 0, FullName = name, Username = username, Password = password };
+                    TesterViewModel p = new TesterViewModel { TesterId = 0, FullName = name, Username = username, Password = password };
                     try
                     {
                         new TesterDAO().Insert(p);

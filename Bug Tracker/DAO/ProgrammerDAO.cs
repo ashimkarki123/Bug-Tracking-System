@@ -9,7 +9,7 @@ using Bug_Tracker.Model;
 
 namespace Bug_Tracker.DAO
 {
-    class ProgrammerDAO : GenericDAO<Programmer>
+    class ProgrammerDAO : GenericDAO<ProgrammerViewModel>
     {
         private SqlConnection conn = new DBConnection().GetConnection();
 
@@ -18,10 +18,10 @@ namespace Bug_Tracker.DAO
             throw new NotImplementedException();
         }
 
-        public List<Programmer> GetAll()
+        public List<ProgrammerViewModel> GetAll()
         {
             conn.Open();
-            List<Programmer> list = new List<Programmer>();
+            List<ProgrammerViewModel> list = new List<ProgrammerViewModel>();
 
             try
             {
@@ -33,7 +33,7 @@ namespace Bug_Tracker.DAO
                     while (reader.Read())
                     {
 
-                        Programmer p = new Programmer
+                        ProgrammerViewModel p = new ProgrammerViewModel
                         {
                             ProgrammerId = Convert.ToInt32(reader["programmer_id"]),
                             FullName = reader["full_name"].ToString(),
@@ -52,10 +52,10 @@ namespace Bug_Tracker.DAO
             return list;
         }
 
-        public Programmer GetById(int id)
+        public ProgrammerViewModel GetById(int id)
         {
             conn.Open();
-            Programmer p = null;
+            ProgrammerViewModel p = null;
 
             try
             {
@@ -68,7 +68,7 @@ namespace Bug_Tracker.DAO
                     while (reader.Read())
                     {
 
-                        p = new Programmer
+                        p = new ProgrammerViewModel
                         {
                             ProgrammerId = Convert.ToInt32(reader["programmer_id"]),
                             FullName = reader["full_name"].ToString(),
@@ -89,7 +89,7 @@ namespace Bug_Tracker.DAO
             return p;
         }
 
-        public void Insert(Programmer t)
+        public void Insert(ProgrammerViewModel t)
         {
             conn.Open();
             SqlTransaction trans = conn.BeginTransaction();
@@ -119,7 +119,7 @@ namespace Bug_Tracker.DAO
             }
         }
 
-        public void Update(Programmer t)
+        public void Update(ProgrammerViewModel t)
         {
             throw new NotImplementedException();
         }

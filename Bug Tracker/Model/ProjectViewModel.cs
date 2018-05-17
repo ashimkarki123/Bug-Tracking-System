@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.Model
 {
-    class Admin
+    class ProjectViewModel
     {
+        public int? ProjectId { get; set; }
         public int? AdminId { get; set; }
-        public string CompanyName { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string ProjectName { get; set; }
+        
     }
 }

@@ -7,12 +7,10 @@ using System.Threading.Tasks;
 namespace Bug_Tracker.Model
 {
     /// <summary>
-    /// Model to save bug history
+    /// Model for saving details about source control
     /// </summary>
-    class BugHistory
+    class VersionControl
     {
-        public int BugHistoryId { get; set; }
-        public string Description { get; set; }
-        public int SourceControlId { get; set; }
+        
     }
 }

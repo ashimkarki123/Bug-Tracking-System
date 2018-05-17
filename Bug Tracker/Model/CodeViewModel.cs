@@ -9,12 +9,13 @@ namespace Bug_Tracker.Model
     /// <summary>
     /// Model class for saving code
     /// </summary>
-    class Code
+    class CodeViewModel
     {
         public string CodeId { get; set; }
+        public int BugId { get; set; }
         public string CodeFilePath { get; set; }
         public string CodeFileName { get; set; }
         public string ProgrammingLanguage { get; set; }
-        public int BugId { get; set; }
+        
     }
 }

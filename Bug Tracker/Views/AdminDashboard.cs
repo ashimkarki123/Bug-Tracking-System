@@ -27,7 +27,7 @@ namespace Bug_Tracker.Views
         private void button1_Click(object sender, EventArgs e)
         {
             string projectName = txtProjectName.Text;
-            Project project = new Project { ProjectName = projectName};
+            ProjectViewModel project = new ProjectViewModel { ProjectName = projectName};
 
             if (string.IsNullOrEmpty(projectName)) {
                 MessageBox.Show("You must add some project");
@@ -46,7 +46,7 @@ namespace Bug_Tracker.Views
         private void GetAllProject()
         {
             ProjectDAO projectDAO = new ProjectDAO();
-            List<Project> project = projectDAO.GetAll();
+            List<ProjectViewModel> project = projectDAO.GetAll();
 
             foreach (var p in project)
             {
@@ -60,7 +60,7 @@ namespace Bug_Tracker.Views
         private void GetAllProgrammers()
         {
             ProgrammerDAO dao = new ProgrammerDAO();
-            List<Programmer> list = dao.GetAll();
+            List<ProgrammerViewModel> list = dao.GetAll();
 
             foreach(var l in list)
             {
@@ -123,7 +123,7 @@ namespace Bug_Tracker.Views
 
             foreach (var l in list)
             {
-                Programmer p = programmerDAO.GetById(Convert.ToInt32(l.ProgrammerId));
+                ProgrammerViewModel p = programmerDAO.GetById(Convert.ToInt32(l.ProgrammerId));
                 programmers.Add(p.ProgrammerId + "," + p.FullName);
             }
 
@@ -213,7 +213,7 @@ namespace Bug_Tracker.Views
         {
             string projectName = textBoxUpdate.Text;
             ProjectDAO projectDAO = new ProjectDAO();
-            Project project = new Project
+            ProjectViewModel project = new ProjectViewModel
             {
                 ProjectId = projectId,
                 ProjectName = projectName

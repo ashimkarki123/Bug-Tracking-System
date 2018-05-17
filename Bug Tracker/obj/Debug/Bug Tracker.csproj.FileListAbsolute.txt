@@ -40,3 +40,23 @@ C:\Users\Ashim Karki\source\repos\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.
 C:\Users\Ashim Karki\source\repos\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.csproj.CoreCompileInputs.cache
 C:\Users\Ashim Karki\source\repos\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.exe
 C:\Users\Ashim Karki\source\repos\Bug Tracker\Bug Tracker\obj\Debug\Bug Tracker.pdb
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug Tracker.csprojResolveAssemblyReference.cache
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Form1.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Properties.Resources.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Views.AboutUs.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Views.Admin.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Views.AdminDashboard.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Views.AdminRegister.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Views.Bugs.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Views.Dashboard.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Views.Login.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Views.Main.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug_Tracker.Views.Register.resources
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug Tracker.csproj.GenerateResource.Cache
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug Tracker.csproj.CoreCompileInputs.cache
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug Tracker.exe
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\obj\Debug\Bug Tracker.pdb
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\bin\Debug\Bug Tracker.exe.config
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\bin\Debug\Bug Tracker.exe
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\bin\Debug\Bug Tracker.pdb
+E:\CollegeProject\Bug-Tracking-System\Bug Tracker\bin\Debug\FastColoredTextBox.xml

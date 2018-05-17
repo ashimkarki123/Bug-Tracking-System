@@ -7,29 +7,29 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.DAO
 {
-    class SourceControlDAO : GenericDAO<SourceControl>
+    class VersionControlDAO : GenericDAO<VersionControl>
     {
         public bool Delete(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<SourceControl> GetAll()
+        public List<VersionControl> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public SourceControl GetById(int id)
+        public VersionControl GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(SourceControl t)
+        public void Insert(VersionControl t)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(SourceControl t)
+        public void Update(VersionControl t)
         {
             throw new NotImplementedException();
         }
