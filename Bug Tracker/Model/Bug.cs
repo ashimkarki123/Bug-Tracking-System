@@ -11,7 +11,7 @@ namespace Bug_Tracker.Model
     /// </summary>
     class Bug
     {
-        public int BugId { get; set; }
+        public int? BugId { get; set; }
         public string ProjectName { get; set; }
         public string ClassName { get; set; }
         public string MethodName { get; set; }
